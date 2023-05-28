@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacts</title>
+</head>
+<body>
+    <header>
+        <div class="logo">YS.Universe</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                 <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="PhineasFerb.html">Phineas and Ferb</a>
+                </li>
+                <li>
+                    <a href="TotallySpies.html">Totally Spies</a>
+                </li>
+                <li>
+                    <a href="PowerpuffGirls.html">Powerpuff Girls</a>
+                </li>
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+                 <li>
+                    <a href="JavaScript.html">Info</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+<div class="background">
+      <div>
+        <div class="infocontact">
+    <p class="md">Have questions or problems while browsing the website?</p>
+    <br>
+    <p class="md">Feel free to contact me!</p>
+    <br>
+      </div>
+          <form action="#" method="post" enctype="text/plain">
+  <label for="name">Name and Surname*</label>
+  <input type="text" id="name" name="name" required="">
+  <label for="phone">Phone Number*</label>
+  <input type="tel" id="phone" name="phone" pattern="^\+380\d{9}$" required="">
+  
+  <label for="email">Email*</label>
+  <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
+  
+  <label for="subject">Subject of your message</label>
+  <input type="text" id="subject" name="subject">
+  
+  <label for="message">Message</label>
+  <textarea id="message" name="message"></textarea>
+  
+  <button type="submit" value="Send">Send</button>
+</form>
+      </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="lr4.css">
+  <link rel="stylesheet" href="Style.css">
+  <script src="lr4.js"></script>
+</head>
+<body>
+	<header>
+        <div class="logo">YS.Universe</div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="PhineasFerb.html">Phineas and Ferb</a>
+                </li>
+                <li>
+                    <a href="TotallySpies.html">Totally Spies</a>
+                </li>
+                <li>
+                    <a href="PowerpuffGirls.html">Powerpuff Girls</a>
+                </li>
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="JavaScript.html">Info</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    <div>
+    	<p class="lg">Look for some info..</p>
+	<form>
+		<label for="days">Days since my b-day:</label>
+		<input type="text" id="days" name="days" readonly>
+		<br><br>
+		<button type="button" onclick="calculateDays()">OK</button>
+		<button type="reset">CANCEL</button>
+	</form>
+
+	<script>
+		function calculateDays() {
+			var birthday = new Date(2004, 1, 2);
+			var today = new Date();
+			var diffTime = Math.abs(today - birthday); 
+			var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+			document.getElementById("days").value = diffDays; 
+		}
+	</script>
+  
+ <a href="#" id="month-link" class="md">What month is it now?</a>
+    </div>
+    <br><br>
+    <div id="datetime" onmouseover="startInterval()" onmouseout="stopInterval()">Current date: <span id="date"></span></div>
+<div id="images">
+    <br><br>
+  <img src="images/picture1.jpg" alt="Image 1" onmouseover="greenOverlay(this)" onmouseout="removeOverlay(this)">
+  <img src="images/picture2.jpg" alt="Image 2" onmouseover="greenOverlay(this)" onmouseout="removeOverlay(this)">
+  <img src="images/picture3.jpg" alt="Image 3" onmouseover="greenOverlay(this)" onmouseout="removeOverlay(this)">
+  <img src="images/picture4.jpg" alt="Image 4" onmouseover="greenOverlay(this)" onmouseout="removeOverlay(this)">
+</div>
+
+</body>
+</html>
